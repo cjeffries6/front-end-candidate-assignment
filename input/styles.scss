@@ -1,0 +1,184 @@
+@import 'colors';
+@import 'media-queries'
+$assetPath: "bg";
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'OpenSans', sans-serif;
+
+}
+
+h2 {
+
+font-family: 'OpenSans', sans-serif;
+   align-items: center;
+   font-size: 45px;
+   color: $white;
+   font-weight: 600;
+   
+   }
+   
+@media screen and (max-width: 500px) {
+  h2 {
+    font-size: 25px;
+  }
+}
+ 
+
+h1 {
+   font-family: 'OpenSans', sans-serif;
+   align-items: center;
+   font-size: 32px;
+   color: $dark;
+   
+   }
+   
+   p {
+   font-family: 'OpenSans', sans-serif;
+   align-items: center;
+   font-size: 14px;
+    
+   color: $white;
+   }
+@media screen and (max-width: 500px) {
+  p {
+    font-size: 7px;
+  }
+  
+  }
+   h3 {
+   font-family: 'OpenSans', sans-serif;
+   align-items: center;
+   font-size: 18px;
+   color: $dark;
+   }
+}
+   h4 {
+   font-family: 'OpenSans', sans-serif;
+   align-items: center;
+   font-size: 10px;
+   color: $dark;
+   }
+   
+ .logo{
+  padding-top: 10em;
+	padding-bottom: 10em;
+	padding-left: 50em;
+
+ }
+	
+// Hero Section CSS
+.hero {
+  text-align: center;
+  align: center;
+  
+
+  }
+  }
+  &__top{
+  display: block;
+  background: url(#{$assetPath}/hero.jpg) no-repeat;
+  background-size: 100%; 
+  max-width: 1200px;
+  
+  
+ }
+
+@media screen and (min-width: 801px) {
+  &__top {
+    padding-top: 5em;
+	padding-bottom: 5em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  &__top  {
+     padding-top: 0em;
+	padding-bottom: 2em;
+	
+  }
+}
+
+
+  
+#ctabutton {
+      padding: 3px 24px;
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      background: $cyan;
+      margin-left: 16px;
+      color: $white;
+
+      &:hover {
+        background: $dark;
+        transition: all 0.3s ease;
+		color: $light;
+      }
+    }
+
+  &__container {
+    display: Block;
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto;
+    z-index: 1;
+    width: 100%;
+	max-width: 1200px;
+    padding-right: 24px;
+    padding-left: 24px;
+
+	}
+	
+
+	
+    @include tablet {
+    grid-template-columns: 1fr;
+      height: 100%;
+    }
+     
+
+    &--img {
+      height: 100%;
+      width: 100%;
+      }
+	  
+
+
+	
+
+ .left {
+      padding: 25px 25px;
+      width: 300px;
+	 border-radius: 3px;
+	 
+     border: 2px solid $dark;
+	 
+      @include tablet {
+        padding: 5rem 0;
+      }
+
+      @include mobile {
+        line-height: 1.5;
+      }
+	  
+	     &__img2 {
+      
+	  border-radius: 99em;
+     border: 25px solid $cyan;
+	 background-color: $cyan;
+
+    }
+    }
+	
+	.container-fluid{
+	max-width:1200px;
+
+	
+  }
+
+
+  
